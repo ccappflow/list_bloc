@@ -17,6 +17,13 @@ command:
       post: melos run generate:dart
 
 scripts:
+  dart:get:
+    description: |
+      Gets all packages (Flutter).
+    run: dart pub get
+    exec:
+      concurrency: 1
+
   flutter:upgrade:
     description: |
       Upgrades all packages (Flutter).

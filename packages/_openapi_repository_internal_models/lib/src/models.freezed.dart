@@ -12,7 +12,7 @@ part of 'models.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 RepositoryTemplateModel _$RepositoryTemplateModelFromJson(
     Map<String, dynamic> json) {
@@ -30,8 +30,12 @@ mixin _$RepositoryTemplateModel {
   int get receiveTimeout => throw _privateConstructorUsedError;
   int get sendTimeout => throw _privateConstructorUsedError;
 
+  /// Serializes this RepositoryTemplateModel to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of RepositoryTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $RepositoryTemplateModelCopyWith<RepositoryTemplateModel> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -64,6 +68,8 @@ class _$RepositoryTemplateModelCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of RepositoryTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -143,6 +149,8 @@ class __$$RepositoryTemplateModelImplCopyWithImpl<$Res>
       $Res Function(_$RepositoryTemplateModelImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of RepositoryTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -240,7 +248,7 @@ class _$RepositoryTemplateModelImpl implements _RepositoryTemplateModel {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$RepositoryTemplateModelImpl &&
@@ -261,7 +269,7 @@ class _$RepositoryTemplateModelImpl implements _RepositoryTemplateModel {
                 other.sendTimeout == sendTimeout));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -274,7 +282,9 @@ class _$RepositoryTemplateModelImpl implements _RepositoryTemplateModel {
       receiveTimeout,
       sendTimeout);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of RepositoryTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$RepositoryTemplateModelImplCopyWith<_$RepositoryTemplateModelImpl>
@@ -319,8 +329,11 @@ abstract class _RepositoryTemplateModel implements RepositoryTemplateModel {
   int get receiveTimeout;
   @override
   int get sendTimeout;
+
+  /// Create a copy of RepositoryTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$RepositoryTemplateModelImplCopyWith<_$RepositoryTemplateModelImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -335,8 +348,12 @@ mixin _$AccessorModel {
   String get name => throw _privateConstructorUsedError;
   String get methodName => throw _privateConstructorUsedError;
 
+  /// Serializes this AccessorModel to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AccessorModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AccessorModelCopyWith<AccessorModel> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -360,6 +377,8 @@ class _$AccessorModelCopyWithImpl<$Res, $Val extends AccessorModel>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AccessorModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -403,6 +422,8 @@ class __$$AccessorModelImplCopyWithImpl<$Res>
       _$AccessorModelImpl _value, $Res Function(_$AccessorModelImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AccessorModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -449,7 +470,7 @@ class _$AccessorModelImpl implements _AccessorModel {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$AccessorModelImpl &&
@@ -459,11 +480,13 @@ class _$AccessorModelImpl implements _AccessorModel {
                 other.methodName == methodName));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, type, name, methodName);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AccessorModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AccessorModelImplCopyWith<_$AccessorModelImpl> get copyWith =>
@@ -492,8 +515,11 @@ abstract class _AccessorModel implements AccessorModel {
   String get name;
   @override
   String get methodName;
+
+  /// Create a copy of AccessorModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AccessorModelImplCopyWith<_$AccessorModelImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -510,8 +536,12 @@ mixin _$FreezedTemplateModel {
   List<AnnotationModel> get annotations => throw _privateConstructorUsedError;
   bool get isTypesEmpty => throw _privateConstructorUsedError;
 
+  /// Serializes this FreezedTemplateModel to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of FreezedTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $FreezedTemplateModelCopyWith<FreezedTemplateModel> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -541,6 +571,8 @@ class _$FreezedTemplateModelCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of FreezedTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -599,6 +631,8 @@ class __$$FreezedTemplateModelImplCopyWithImpl<$Res>
       $Res Function(_$FreezedTemplateModelImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FreezedTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -682,7 +716,7 @@ class _$FreezedTemplateModelImpl implements _FreezedTemplateModel {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$FreezedTemplateModelImpl &&
@@ -696,7 +730,7 @@ class _$FreezedTemplateModelImpl implements _FreezedTemplateModel {
                 other.isTypesEmpty == isTypesEmpty));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -706,7 +740,9 @@ class _$FreezedTemplateModelImpl implements _FreezedTemplateModel {
       const DeepCollectionEquality().hash(_annotations),
       isTypesEmpty);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FreezedTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FreezedTemplateModelImplCopyWith<_$FreezedTemplateModelImpl>
@@ -743,8 +779,11 @@ abstract class _FreezedTemplateModel implements FreezedTemplateModel {
   List<AnnotationModel> get annotations;
   @override
   bool get isTypesEmpty;
+
+  /// Create a copy of FreezedTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FreezedTemplateModelImplCopyWith<_$FreezedTemplateModelImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -761,8 +800,12 @@ mixin _$TypeModel {
   String get type => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
 
+  /// Serializes this TypeModel to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of TypeModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $TypeModelCopyWith<TypeModel> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -790,6 +833,8 @@ class _$TypeModelCopyWithImpl<$Res, $Val extends TypeModel>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of TypeModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -848,6 +893,8 @@ class __$$TypeModelImplCopyWithImpl<$Res>
       _$TypeModelImpl _value, $Res Function(_$TypeModelImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of TypeModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -912,7 +959,7 @@ class _$TypeModelImpl implements _TypeModel {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$TypeModelImpl &&
@@ -926,12 +973,14 @@ class _$TypeModelImpl implements _TypeModel {
             (identical(other.name, name) || other.name == name));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType, isRequired, isNullable, defaultValue, type, name);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of TypeModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$TypeModelImplCopyWith<_$TypeModelImpl> get copyWith =>
@@ -966,8 +1015,11 @@ abstract class _TypeModel implements TypeModel {
   String get type;
   @override
   String get name;
+
+  /// Create a copy of TypeModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$TypeModelImplCopyWith<_$TypeModelImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -982,8 +1034,12 @@ mixin _$TypedefTemplateModel {
   String get name => throw _privateConstructorUsedError;
   bool get hasFilter => throw _privateConstructorUsedError;
 
+  /// Serializes this TypedefTemplateModel to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of TypedefTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $TypedefTemplateModelCopyWith<TypedefTemplateModel> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1008,6 +1064,8 @@ class _$TypedefTemplateModelCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of TypedefTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1051,6 +1109,8 @@ class __$$TypedefTemplateModelImplCopyWithImpl<$Res>
       $Res Function(_$TypedefTemplateModelImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of TypedefTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1098,7 +1158,7 @@ class _$TypedefTemplateModelImpl implements _TypedefTemplateModel {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$TypedefTemplateModelImpl &&
@@ -1108,11 +1168,13 @@ class _$TypedefTemplateModelImpl implements _TypedefTemplateModel {
                 other.hasFilter == hasFilter));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, type, name, hasFilter);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of TypedefTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$TypedefTemplateModelImplCopyWith<_$TypedefTemplateModelImpl>
@@ -1143,8 +1205,11 @@ abstract class _TypedefTemplateModel implements TypedefTemplateModel {
   String get name;
   @override
   bool get hasFilter;
+
+  /// Create a copy of TypedefTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$TypedefTemplateModelImplCopyWith<_$TypedefTemplateModelImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1167,8 +1232,12 @@ mixin _$ListRepositoryTemplateModel {
   List<ParamModel> get additionalParams => throw _privateConstructorUsedError;
   List<ParamModel> get filterParams => throw _privateConstructorUsedError;
 
+  /// Serializes this ListRepositoryTemplateModel to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ListRepositoryTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ListRepositoryTemplateModelCopyWith<ListRepositoryTemplateModel>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1205,6 +1274,8 @@ class _$ListRepositoryTemplateModelCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ListRepositoryTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1296,6 +1367,8 @@ class __$$ListRepositoryTemplateModelImplCopyWithImpl<$Res>
       $Res Function(_$ListRepositoryTemplateModelImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ListRepositoryTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1428,7 +1501,7 @@ class _$ListRepositoryTemplateModelImpl
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$ListRepositoryTemplateModelImpl &&
@@ -1452,7 +1525,7 @@ class _$ListRepositoryTemplateModelImpl
                 .equals(other._filterParams, _filterParams));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1467,7 +1540,9 @@ class _$ListRepositoryTemplateModelImpl
       const DeepCollectionEquality().hash(_additionalParams),
       const DeepCollectionEquality().hash(_filterParams));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ListRepositoryTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ListRepositoryTemplateModelImplCopyWith<_$ListRepositoryTemplateModelImpl>
@@ -1519,8 +1594,11 @@ abstract class _ListRepositoryTemplateModel
   List<ParamModel> get additionalParams;
   @override
   List<ParamModel> get filterParams;
+
+  /// Create a copy of ListRepositoryTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ListRepositoryTemplateModelImplCopyWith<_$ListRepositoryTemplateModelImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1541,8 +1619,12 @@ mixin _$DataCubitTemplateModel {
   String get returnType => throw _privateConstructorUsedError;
   List<ParamModel> get additionalParams => throw _privateConstructorUsedError;
 
+  /// Serializes this DataCubitTemplateModel to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of DataCubitTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $DataCubitTemplateModelCopyWith<DataCubitTemplateModel> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1575,6 +1657,8 @@ class _$DataCubitTemplateModelCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of DataCubitTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1654,6 +1738,8 @@ class __$$DataCubitTemplateModelImplCopyWithImpl<$Res>
       $Res Function(_$DataCubitTemplateModelImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of DataCubitTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1759,7 +1845,7 @@ class _$DataCubitTemplateModelImpl implements _DataCubitTemplateModel {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$DataCubitTemplateModelImpl &&
@@ -1779,7 +1865,7 @@ class _$DataCubitTemplateModelImpl implements _DataCubitTemplateModel {
                 .equals(other._additionalParams, _additionalParams));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1792,7 +1878,9 @@ class _$DataCubitTemplateModelImpl implements _DataCubitTemplateModel {
       returnType,
       const DeepCollectionEquality().hash(_additionalParams));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of DataCubitTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$DataCubitTemplateModelImplCopyWith<_$DataCubitTemplateModelImpl>
@@ -1837,8 +1925,11 @@ abstract class _DataCubitTemplateModel implements DataCubitTemplateModel {
   String get returnType;
   @override
   List<ParamModel> get additionalParams;
+
+  /// Create a copy of DataCubitTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DataCubitTemplateModelImplCopyWith<_$DataCubitTemplateModelImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1851,8 +1942,12 @@ ParamModel _$ParamModelFromJson(Map<String, dynamic> json) {
 mixin _$ParamModel {
   String get param => throw _privateConstructorUsedError;
 
+  /// Serializes this ParamModel to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ParamModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ParamModelCopyWith<ParamModel> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1876,6 +1971,8 @@ class _$ParamModelCopyWithImpl<$Res, $Val extends ParamModel>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ParamModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1909,6 +2006,8 @@ class __$$ParamModelImplCopyWithImpl<$Res>
       _$ParamModelImpl _value, $Res Function(_$ParamModelImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ParamModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1940,18 +2039,20 @@ class _$ParamModelImpl implements _ParamModel {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$ParamModelImpl &&
             (identical(other.param, param) || other.param == param));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, param);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ParamModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ParamModelImplCopyWith<_$ParamModelImpl> get copyWith =>
@@ -1973,8 +2074,11 @@ abstract class _ParamModel implements ParamModel {
 
   @override
   String get param;
+
+  /// Create a copy of ParamModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ParamModelImplCopyWith<_$ParamModelImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1987,8 +2091,12 @@ AnnotationModel _$AnnotationModelFromJson(Map<String, dynamic> json) {
 mixin _$AnnotationModel {
   String get annotation => throw _privateConstructorUsedError;
 
+  /// Serializes this AnnotationModel to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AnnotationModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AnnotationModelCopyWith<AnnotationModel> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2012,6 +2120,8 @@ class _$AnnotationModelCopyWithImpl<$Res, $Val extends AnnotationModel>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AnnotationModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2045,6 +2155,8 @@ class __$$AnnotationModelImplCopyWithImpl<$Res>
       _$AnnotationModelImpl _value, $Res Function(_$AnnotationModelImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AnnotationModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2076,7 +2188,7 @@ class _$AnnotationModelImpl implements _AnnotationModel {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$AnnotationModelImpl &&
@@ -2084,11 +2196,13 @@ class _$AnnotationModelImpl implements _AnnotationModel {
                 other.annotation == annotation));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, annotation);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AnnotationModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AnnotationModelImplCopyWith<_$AnnotationModelImpl> get copyWith =>
@@ -2112,8 +2226,11 @@ abstract class _AnnotationModel implements AnnotationModel {
 
   @override
   String get annotation;
+
+  /// Create a copy of AnnotationModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AnnotationModelImplCopyWith<_$AnnotationModelImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2129,8 +2246,12 @@ mixin _$ArgModel {
   bool get isNullableArg => throw _privateConstructorUsedError;
   bool get isRequiredArg => throw _privateConstructorUsedError;
 
+  /// Serializes this ArgModel to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ArgModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ArgModelCopyWith<ArgModel> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2154,6 +2275,8 @@ class _$ArgModelCopyWithImpl<$Res, $Val extends ArgModel>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ArgModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2203,6 +2326,8 @@ class __$$ArgModelModelImplCopyWithImpl<$Res>
       _$ArgModelModelImpl _value, $Res Function(_$ArgModelModelImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ArgModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2256,7 +2381,7 @@ class _$ArgModelModelImpl implements _ArgModelModel {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$ArgModelModelImpl &&
@@ -2268,12 +2393,14 @@ class _$ArgModelModelImpl implements _ArgModelModel {
                 other.isRequiredArg == isRequiredArg));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
       Object.hash(runtimeType, argType, argName, isNullableArg, isRequiredArg);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ArgModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ArgModelModelImplCopyWith<_$ArgModelModelImpl> get copyWith =>
@@ -2302,8 +2429,11 @@ abstract class _ArgModelModel implements ArgModel {
   bool get isNullableArg;
   @override
   bool get isRequiredArg;
+
+  /// Create a copy of ArgModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ArgModelModelImplCopyWith<_$ArgModelModelImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2323,8 +2453,12 @@ mixin _$MethodModel {
   bool get isList => throw _privateConstructorUsedError;
   bool get shouldUseAsList => throw _privateConstructorUsedError;
 
+  /// Serializes this MethodModel to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of MethodModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $MethodModelCopyWith<MethodModel> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2356,6 +2490,8 @@ class _$MethodModelCopyWithImpl<$Res, $Val extends MethodModel>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of MethodModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2432,6 +2568,8 @@ class __$$MethodModelImplCopyWithImpl<$Res>
       _$MethodModelImpl _value, $Res Function(_$MethodModelImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of MethodModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2538,7 +2676,7 @@ class _$MethodModelImpl implements _MethodModel {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$MethodModelImpl &&
@@ -2558,7 +2696,7 @@ class _$MethodModelImpl implements _MethodModel {
                 other.shouldUseAsList == shouldUseAsList));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2571,7 +2709,9 @@ class _$MethodModelImpl implements _MethodModel {
       isList,
       shouldUseAsList);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MethodModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$MethodModelImplCopyWith<_$MethodModelImpl> get copyWith =>
@@ -2615,8 +2755,11 @@ abstract class _MethodModel implements MethodModel {
   bool get isList;
   @override
   bool get shouldUseAsList;
+
+  /// Create a copy of MethodModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$MethodModelImplCopyWith<_$MethodModelImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2643,8 +2786,12 @@ mixin _$LoaderMethodModel {
   bool get isInline => throw _privateConstructorUsedError;
   bool get shouldUseAsList => throw _privateConstructorUsedError;
 
+  /// Serializes this LoaderMethodModel to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of LoaderMethodModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $LoaderMethodModelCopyWith<LoaderMethodModel> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2682,6 +2829,8 @@ class _$LoaderMethodModelCopyWithImpl<$Res, $Val extends LoaderMethodModel>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of LoaderMethodModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2794,6 +2943,8 @@ class __$$LoaderMethodModelImplCopyWithImpl<$Res>
       $Res Function(_$LoaderMethodModelImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LoaderMethodModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2957,7 +3108,7 @@ class _$LoaderMethodModelImpl implements _LoaderMethodModel {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$LoaderMethodModelImpl &&
@@ -2989,7 +3140,7 @@ class _$LoaderMethodModelImpl implements _LoaderMethodModel {
                 other.shouldUseAsList == shouldUseAsList));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3008,7 +3159,9 @@ class _$LoaderMethodModelImpl implements _LoaderMethodModel {
       isInline,
       shouldUseAsList);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of LoaderMethodModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$LoaderMethodModelImplCopyWith<_$LoaderMethodModelImpl> get copyWith =>
@@ -3071,8 +3224,11 @@ abstract class _LoaderMethodModel implements LoaderMethodModel {
   bool get isInline;
   @override
   bool get shouldUseAsList;
+
+  /// Create a copy of LoaderMethodModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$LoaderMethodModelImplCopyWith<_$LoaderMethodModelImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3096,8 +3252,12 @@ mixin _$LoaderRepositoryTemplateModel {
   String get dataFilterSuffix => throw _privateConstructorUsedError;
   String get listFilterSuffix => throw _privateConstructorUsedError;
 
+  /// Serializes this LoaderRepositoryTemplateModel to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of LoaderRepositoryTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $LoaderRepositoryTemplateModelCopyWith<LoaderRepositoryTemplateModel>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3138,6 +3298,8 @@ class _$LoaderRepositoryTemplateModelCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of LoaderRepositoryTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3201,6 +3363,8 @@ class _$LoaderRepositoryTemplateModelCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of LoaderRepositoryTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $LoaderTemplateModelCopyWith<$Res>? get dataLoader {
@@ -3213,6 +3377,8 @@ class _$LoaderRepositoryTemplateModelCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of LoaderRepositoryTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $LoaderTemplateModelCopyWith<$Res>? get listLoader {
@@ -3264,6 +3430,8 @@ class __$$LoaderRepositoryTemplateModelImplCopyWithImpl<$Res>
       $Res Function(_$LoaderRepositoryTemplateModelImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LoaderRepositoryTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3386,7 +3554,7 @@ class _$LoaderRepositoryTemplateModelImpl
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$LoaderRepositoryTemplateModelImpl &&
@@ -3413,7 +3581,7 @@ class _$LoaderRepositoryTemplateModelImpl
                 other.listFilterSuffix == listFilterSuffix));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3429,7 +3597,9 @@ class _$LoaderRepositoryTemplateModelImpl
       dataFilterSuffix,
       listFilterSuffix);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of LoaderRepositoryTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$LoaderRepositoryTemplateModelImplCopyWith<
@@ -3486,8 +3656,11 @@ abstract class _LoaderRepositoryTemplateModel
   String get dataFilterSuffix;
   @override
   String get listFilterSuffix;
+
+  /// Create a copy of LoaderRepositoryTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$LoaderRepositoryTemplateModelImplCopyWith<
           _$LoaderRepositoryTemplateModelImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3510,8 +3683,12 @@ mixin _$LoaderTemplateModel {
   List<ParamModel> get additionalParams => throw _privateConstructorUsedError;
   List<ParamModel> get filterParams => throw _privateConstructorUsedError;
 
+  /// Serializes this LoaderTemplateModel to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of LoaderTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $LoaderTemplateModelCopyWith<LoaderTemplateModel> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3545,6 +3722,8 @@ class _$LoaderTemplateModelCopyWithImpl<$Res, $Val extends LoaderTemplateModel>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of LoaderTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3633,6 +3812,8 @@ class __$$LoaderTemplateModelImplCopyWithImpl<$Res>
       $Res Function(_$LoaderTemplateModelImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LoaderTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3757,7 +3938,7 @@ class _$LoaderTemplateModelImpl implements _LoaderTemplateModel {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$LoaderTemplateModelImpl &&
@@ -3784,7 +3965,7 @@ class _$LoaderTemplateModelImpl implements _LoaderTemplateModel {
                 .equals(other._filterParams, _filterParams));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3799,7 +3980,9 @@ class _$LoaderTemplateModelImpl implements _LoaderTemplateModel {
       const DeepCollectionEquality().hash(_additionalParams),
       const DeepCollectionEquality().hash(_filterParams));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of LoaderTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$LoaderTemplateModelImplCopyWith<_$LoaderTemplateModelImpl> get copyWith =>
@@ -3850,8 +4033,11 @@ abstract class _LoaderTemplateModel implements LoaderTemplateModel {
   List<ParamModel> get additionalParams;
   @override
   List<ParamModel> get filterParams;
+
+  /// Create a copy of LoaderTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$LoaderTemplateModelImplCopyWith<_$LoaderTemplateModelImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3871,8 +4057,12 @@ mixin _$CubitTemplateModel {
   String? get blocMixins => throw _privateConstructorUsedError;
   bool get hasBlocMixins => throw _privateConstructorUsedError;
 
+  /// Serializes this CubitTemplateModel to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CubitTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CubitTemplateModelCopyWith<CubitTemplateModel> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3904,6 +4094,8 @@ class _$CubitTemplateModelCopyWithImpl<$Res, $Val extends CubitTemplateModel>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CubitTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3980,6 +4172,8 @@ class __$$CubitTemplateModelImplCopyWithImpl<$Res>
       $Res Function(_$CubitTemplateModelImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CubitTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4078,7 +4272,7 @@ class _$CubitTemplateModelImpl implements _CubitTemplateModel {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$CubitTemplateModelImpl &&
@@ -4099,7 +4293,7 @@ class _$CubitTemplateModelImpl implements _CubitTemplateModel {
                 other.hasBlocMixins == hasBlocMixins));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4112,7 +4306,9 @@ class _$CubitTemplateModelImpl implements _CubitTemplateModel {
       blocMixins,
       hasBlocMixins);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CubitTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CubitTemplateModelImplCopyWith<_$CubitTemplateModelImpl> get copyWith =>
@@ -4157,8 +4353,11 @@ abstract class _CubitTemplateModel implements CubitTemplateModel {
   String? get blocMixins;
   @override
   bool get hasBlocMixins;
+
+  /// Create a copy of CubitTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CubitTemplateModelImplCopyWith<_$CubitTemplateModelImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -4174,8 +4373,12 @@ mixin _$BuiltListJsonConverterModel {
   String get innerReturnType => throw _privateConstructorUsedError;
   bool get shouldCreateConverter => throw _privateConstructorUsedError;
 
+  /// Serializes this BuiltListJsonConverterModel to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of BuiltListJsonConverterModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $BuiltListJsonConverterModelCopyWith<BuiltListJsonConverterModel>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -4205,6 +4408,8 @@ class _$BuiltListJsonConverterModelCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of BuiltListJsonConverterModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4254,6 +4459,8 @@ class __$$BuiltListJsonConverterModelImplCopyWithImpl<$Res>
       $Res Function(_$BuiltListJsonConverterModelImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of BuiltListJsonConverterModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4305,7 +4512,7 @@ class _$BuiltListJsonConverterModelImpl
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$BuiltListJsonConverterModelImpl &&
@@ -4317,12 +4524,14 @@ class _$BuiltListJsonConverterModelImpl
                 other.shouldCreateConverter == shouldCreateConverter));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType, converterName, innerReturnType, shouldCreateConverter);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of BuiltListJsonConverterModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$BuiltListJsonConverterModelImplCopyWith<_$BuiltListJsonConverterModelImpl>
@@ -4353,8 +4562,11 @@ abstract class _BuiltListJsonConverterModel
   String get innerReturnType;
   @override
   bool get shouldCreateConverter;
+
+  /// Create a copy of BuiltListJsonConverterModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$BuiltListJsonConverterModelImplCopyWith<_$BuiltListJsonConverterModelImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -4369,8 +4581,12 @@ mixin _$BuiltListJsonConverterTemplateModel {
   String get converterName => throw _privateConstructorUsedError;
   String get innerReturnType => throw _privateConstructorUsedError;
 
+  /// Serializes this BuiltListJsonConverterTemplateModel to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of BuiltListJsonConverterTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $BuiltListJsonConverterTemplateModelCopyWith<
           BuiltListJsonConverterTemplateModel>
       get copyWith => throw _privateConstructorUsedError;
@@ -4398,6 +4614,8 @@ class _$BuiltListJsonConverterTemplateModelCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of BuiltListJsonConverterTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4439,6 +4657,8 @@ class __$$BuiltListJsonConverterTemplateModelImplCopyWithImpl<$Res>
       $Res Function(_$BuiltListJsonConverterTemplateModelImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of BuiltListJsonConverterTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4480,7 +4700,7 @@ class _$BuiltListJsonConverterTemplateModelImpl
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$BuiltListJsonConverterTemplateModelImpl &&
@@ -4490,11 +4710,13 @@ class _$BuiltListJsonConverterTemplateModelImpl
                 other.innerReturnType == innerReturnType));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, converterName, innerReturnType);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of BuiltListJsonConverterTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$BuiltListJsonConverterTemplateModelImplCopyWith<
@@ -4525,8 +4747,11 @@ abstract class _BuiltListJsonConverterTemplateModel
   String get converterName;
   @override
   String get innerReturnType;
+
+  /// Create a copy of BuiltListJsonConverterTemplateModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$BuiltListJsonConverterTemplateModelImplCopyWith<
           _$BuiltListJsonConverterTemplateModelImpl>
       get copyWith => throw _privateConstructorUsedError;

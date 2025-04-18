@@ -17,9 +17,9 @@ _$RepositoryTemplateModelImpl _$$RepositoryTemplateModelImplFromJson(
               ?.map((e) => AccessorModel.fromJson(e as Map<String, dynamic>))
               .toList() ??
           const [],
-      connectTimeout: json['connectTimeout'] as int,
-      receiveTimeout: json['receiveTimeout'] as int,
-      sendTimeout: json['sendTimeout'] as int,
+      connectTimeout: (json['connectTimeout'] as num).toInt(),
+      receiveTimeout: (json['receiveTimeout'] as num).toInt(),
+      sendTimeout: (json['sendTimeout'] as num).toInt(),
     );
 
 Map<String, dynamic> _$$RepositoryTemplateModelImplToJson(
@@ -262,8 +262,8 @@ _$LoaderMethodModelImpl _$$LoaderMethodModelImplFromJson(
       filterParams: (json['filterParams'] as List<dynamic>)
           .map((e) => ParamModel.fromJson(e as Map<String, dynamic>))
           .toList(),
-      defaultOffset: json['defaultOffset'] as int,
-      defaultPageSize: json['defaultPageSize'] as int,
+      defaultOffset: (json['defaultOffset'] as num).toInt(),
+      defaultPageSize: (json['defaultPageSize'] as num).toInt(),
       builtListConverters: (json['builtListConverters'] as List<dynamic>?)
               ?.map((e) => BuiltListJsonConverterModel.fromJson(
                   e as Map<String, dynamic>))
