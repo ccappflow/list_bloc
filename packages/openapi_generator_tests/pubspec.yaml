@@ -10,7 +10,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  openapi_repository_annotations: any
+  openapi_repository_annotations:
+    git:
+      url: https://github.com/ccappflow/list_bloc
+      path: packages/openapi_repository_annotations
   openapi_repository:
     path: ../openapi_repository
   dio: any
